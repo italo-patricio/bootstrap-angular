@@ -1,0 +1,12 @@
+<ul class="list-group">
+  <li class="list-group-item text-center">
+    <img [src]="item?.image" style="height: 240px;">
+  </li>
+  <li class="list-group-item"><b>Nome:</b> {{item?.name}}</li>
+  <li class="list-group-item"><b>Espécie:</b> {{item?.species}}</li>
+  <li class="list-group-item"><b>Sexo:</b> {{item?.gender}}</li>
+  <li class="list-group-item"><b>Está vivo(a):</b> {{item?.alive ? 'Sim': 'Não'}}</li>
+  <li class="list-group-item"><b>É aluno(a) de Hogwarts:</b> {{item?.hogwartsStudent ? 'Sim': 'Não'}}</li>
+  <li class="list-group-item"><b>É funcionário(a) de Hogwarts:</b> {{item?.hogwartsStaff ? 'Sim': 'Não'}}</li>
+  <li class="list-group-item"><b>Nascido(a) em:</b> {{ str2DateFormated()}}</li>
+</ul>
